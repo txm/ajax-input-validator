@@ -1,5 +1,5 @@
 {
-  "name": "react-input-validator",
+  "name": "ajax-input-validator",
   "version": "1.0.0",
   "description": "Developed for use in React <input />'s to watch for changes and AJAX run a validator. ES6 only.",
   "main": "index.js",
@@ -21,14 +21,14 @@
     "input",
     "validator",
     "ajax",
-    "reactjs"
+    "ajax"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/txm/react-input-validator.git"
+    "url": "git://github.com/txm/ajax-input-validator.git"
   },
-  "homepage": "https://github.com/txm/react-input-validator",
+  "homepage": "https://github.com/txm/ajax-input-validator",
   "bugs": {
-    "url": "https://github.com/txm/react-input-validator/issues"
+    "url": "https://github.com/txm/ajax-input-validator/issues"
   }
 }
