@@ -1,4 +1,4 @@
-export class InputValidator {
+export class AIV {
 
   constructor(args) {
     this.timeoutHandle;

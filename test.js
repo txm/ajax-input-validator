@@ -2,14 +2,14 @@ import React from 'react';
 import { expect } from 'chai';
 import { mount, shallow } from 'enzyme';
 
-import { InputValidator } from './';
+import { AIV } from './';
 
 
 function validate_func(){
   return 'OK';
 }
 
-let IW = new InputValidator({time:5000, validate_func:validate_func});
+let IW = new AIV({time:5000, validate_func:validate_func});
 
 
 function keyPress() {
@@ -24,7 +24,7 @@ function pressKey() {
 }
 
 
-describe('InputValidator', () => {
+describe('AIV', () => {
 
   it('simulate keypress', () => {
     pressKey();
@@ -34,7 +34,7 @@ describe('InputValidator', () => {
 });
 
 
-describe('InputValidator', () => {
+describe('AIV', () => {
 
   it('simulate timeout', () => {
     IW.blur();
