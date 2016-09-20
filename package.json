@@ -1,6 +1,6 @@
 {
   "name": "ajax-input-validator",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Developed for use in React <input />'s to watch for changes and AJAX run a validator. ES6 only.",
   "main": "index.js",
   "license": "MIT",
@@ -12,10 +12,14 @@
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.14.0",
-    "babel-preset-es2015": "^6.14.0"
+    "babel-preset-es2015": "^6.14.0",
+    "enzyme": "^2.4.1",
+    "react": "^15.3.2",
+    "react-addons-test-utils": "^15.3.2",
+    "react-dom": "^15.3.2"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "_mocha --compilers js:babel-core/register test.js"
   },
   "keywords": [
     "input",
