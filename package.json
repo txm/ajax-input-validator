@@ -1,0 +1,34 @@
+{
+  "name": "input-validator",
+  "version": "1.0.0",
+  "description": "Developed for use in React <input />'s to watch for changes and AJAX run a validator. ES6 only.",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Andrew McGregor",
+    "email": "andy@txm.net",
+    "url": "https://github.com/txm"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "input",
+    "validator",
+    "ajax",
+    "reactjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/txm/input-validator.git"
+  },
+  "homepage": "https://github.com/txm/input-validator",
+  "bugs": {
+    "url": "https://github.com/txm/input-validator/issues"
+  }
+}
