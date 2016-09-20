@@ -1,4 +1,4 @@
-export class InputWatch {
+export class InputValidator {
 
   constructor(args) {
     this.timeoutHandle;
