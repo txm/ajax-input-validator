@@ -3,34 +3,34 @@
 export default class AjaxInputValidator {
 
   constructor(args) {
-    this.timeoutHandle;
+    this.timeoutHandle = null;
     Object.assign(this, args);
     //this.setTimer();
   }
 
   setTimer() {
-    let timeoutHandle = setTimeout(function(){
+    let timeoutHandle2 = setTimeout(function(){
       console.log('awake!');
       this.validate();
     }.bind(this), this.time);
 
-    this.timeoutHandle = timeoutHandle;
+    this.timeoutHandle = timeoutHandle2;
   }
 
   keyDown() {
     //this.clearTimeout2();
-    const timeoutHandle = this.timeoutHandle;
+    const timeoutHandle2 = this.timeoutHandle;
     this.timeoutHandle = undefined;
     clearTimeout(this.timeoutHandle);
-    clearTimeout(timeoutHandle);
+    clearTimeout(timeoutHandle2);
   }
 
   keyUp() {
     //this.clearTimeout2();
-    const timeoutHandle = this.timeoutHandle;
+    const timeoutHandle2 = this.timeoutHandle;
     this.timeoutHandle = undefined;
     clearTimeout(this.timeoutHandle);
-    clearTimeout(timeoutHandle);
+    clearTimeout(timeoutHandle2);
     this.setTimer();
   }
 
@@ -44,18 +44,18 @@ export default class AjaxInputValidator {
 
   validate() {
     //this.clearTimeout2();
-    const timeoutHandle = this.timeoutHandle;
+    const timeoutHandle2 = this.timeoutHandle;
     this.timeoutHandle = undefined;
     clearTimeout(this.timeoutHandle);
-    clearTimeout(timeoutHandle);
+    clearTimeout(timeoutHandle2);
     this.validate_func();
   }
 
   clearTimeout2() {
-    let timeoutHandle = this.timeoutHandle;
+    let timeoutHandle2 = this.timeoutHandle;
     this.timeoutHandle = undefined;
     clearTimeout(this.timeoutHandle);
-    clearTimeout(timeoutHandle);
+    clearTimeout(timeoutHandle2);
   }
 
 }
