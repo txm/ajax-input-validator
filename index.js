@@ -1,4 +1,6 @@
-export class AIV {
+'use strict';
+
+class AjaxInputValidator {
 
   constructor(args) {
     this.timeoutHandle;
