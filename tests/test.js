@@ -1,20 +1,21 @@
-import React from 'react';
-import { expect } from 'chai';
-import { mount, shallow } from 'enzyme';
+//import React from 'react';
+//import { expect } from 'chai';
+//import { mount, shallow } from 'enzyme';
 
-import { AjaxInputValidator } from './';
+//const AjaxInputValidator = require('../source/index.js').default;
+import AjaxInputValidator from '../source/index.js';
 
 
 function validate_func(){
   return 'OK';
 }
 
-let IW = new AjaxInputValidator({time:5000, validate_func:validate_func});
+const aiv = new AjaxInputValidator({time:5000, validate_func:validate_func});
 
 
 function keyPress() {
-  IW.keyDown();
-  IW.keyUp();
+  aiv.keyDown();
+  aiv.keyUp();
 }
 
 function pressKey() {
@@ -37,7 +38,7 @@ describe('AjaxInputValidator', () => {
 describe('AjaxInputValidator', () => {
 
   it('simulate timeout', () => {
-    IW.blur();
+    aiv.blur();
     //expect(Foo.prototype.componentDidMount.calledOnce).to.equal(true);
   });
 
