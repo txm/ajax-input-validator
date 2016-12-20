@@ -18,11 +18,11 @@ export default class AjaxInputValidator {
   }
 
   keyDown() {
-    this.clearTimeout();
+    this.clearTimeout2();
   }
 
   keyUp() {
-    this.clearTimeout();
+    this.clearTimeout2();
     this.setTimer();
   }
 
@@ -35,11 +35,11 @@ export default class AjaxInputValidator {
   }
 
   validate() {
-    this.clearTimeout();
+    this.clearTimeout2();
     this.validate_func();
   }
 
-  clearTimeout() {
+  clearTimeout2() {
     let timeoutHandle = this.timeoutHandle;
     this.timeoutHandle = undefined;
     clearTimeout(this.timeoutHandle);
