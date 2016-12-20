@@ -10,7 +10,7 @@ Developed for use in React html input's to watch for changes and AJAX run a vali
 
 `let aiv = new AjaxInputValidator({time:2000, validate_func:validate_func});`
 
-`<input onKeyUp={aiv.keyUp} onPaste={aiv.paste} onBlur{aiv.blur} />`
+`<input onKeyUp={aiv.keyUp} onPaste={aiv.paste} onBlur={aiv.blur} />`
 
 ## License
 
