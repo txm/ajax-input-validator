@@ -1,6 +1,6 @@
 {
   "name": "ajax-input-validator",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Developed for use in React html input's to watch for changes and AJAX run a validator. ES6 only.",
   "main": "./distribution/index.js",
   "license": "MIT",
