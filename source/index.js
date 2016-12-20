@@ -5,7 +5,7 @@ export default class AjaxInputValidator {
   constructor(args) {
     this.timeoutHandle;
     Object.assign(this, args);
-    this.setTimer();
+    //this.setTimer();
   }
 
   setTimer() {

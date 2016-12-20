@@ -10,6 +10,7 @@ function validate_func(){
   return 'OK';
 }
 
+console.log('ok');
 const aiv = new AjaxInputValidator({time:5000, validate_func:validate_func});
 
 
@@ -24,23 +25,8 @@ function pressKey() {
   }, 2000);
 }
 
+function blur() {
+  aiv.blur();
+}
 
-describe('AjaxInputValidator', () => {
-
-  it('simulate keypress', () => {
-    //pressKey();
-    keyPress();
-    //expect(Foo.prototype.componentDidMount.calledOnce).to.equal(true);
-  });
-
-});
-
-
-describe('AjaxInputValidator', () => {
-
-  it('simulate timeout', () => {
-    aiv.blur();
-    //expect(Foo.prototype.componentDidMount.calledOnce).to.equal(true);
-  });
-
-});
+pressKey();
