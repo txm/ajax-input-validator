@@ -8,6 +8,8 @@ Developed for use in React html input's to watch for changes and AJAX run a vali
 
 [![NPM](https://nodei.co/npm/ajax-input-validator.png)](https://www.npmjs.com/package/ajax-input-validator)
 
+`import AjaxInputValidator from 'ajax-input-validator';`
+
 `let aiv = new AjaxInputValidator({time:2000, validate_func:validate_func});`
 
 `<input onKeyUp={aiv.keyUp} onPaste={aiv.paste} onBlur={aiv.blur} />`

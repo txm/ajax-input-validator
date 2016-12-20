@@ -1,6 +1,6 @@
 'use strict';
 
-class AjaxInputValidator {
+export default class AjaxInputValidator {
 
   constructor(args) {
     this.timeoutHandle;
