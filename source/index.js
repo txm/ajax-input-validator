@@ -18,11 +18,19 @@ export default class AjaxInputValidator {
   }
 
   keyDown() {
-    this.clearTimeout2();
+    //this.clearTimeout2();
+    const timeoutHandle = this.timeoutHandle;
+    this.timeoutHandle = undefined;
+    clearTimeout(this.timeoutHandle);
+    clearTimeout(timeoutHandle);
   }
 
   keyUp() {
-    this.clearTimeout2();
+    //this.clearTimeout2();
+    const timeoutHandle = this.timeoutHandle;
+    this.timeoutHandle = undefined;
+    clearTimeout(this.timeoutHandle);
+    clearTimeout(timeoutHandle);
     this.setTimer();
   }
 
@@ -35,7 +43,11 @@ export default class AjaxInputValidator {
   }
 
   validate() {
-    this.clearTimeout2();
+    //this.clearTimeout2();
+    const timeoutHandle = this.timeoutHandle;
+    this.timeoutHandle = undefined;
+    clearTimeout(this.timeoutHandle);
+    clearTimeout(timeoutHandle);
     this.validate_func();
   }
 
