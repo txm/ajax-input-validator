@@ -3,7 +3,7 @@ import { expect } from 'chai';
 //import { mount, shallow } from 'enzyme';
 
 //const AjaxInputValidator = require('../source/index.js').default;
-import AjaxInputValidator from '../source/index.js';
+import AjaxInputValidator from '../distribution/index.js';
 
 
 function validate_func(){
